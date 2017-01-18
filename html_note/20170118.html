@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		
+		<h1>第五天笔记<br /> </h1>
+		一些属性：
+		<ul>
+			<li>word-spacing 单词间距，适用于英文</li>
+			<li>letter-spacing 字母间距，适用于英文和中文</li>
+			<li>1em = 12px</li>
+			<li>vertical-align 垂直方向位置</li>
+				举个栗子：<br/>
+				<img src="../img/捕获.PNG" /><br />
+				<code>
+				img.wf1{<br />
+					vertical-align: top; /*行内对其方式*/<br />
+				}<br />
+				img.wf2{<br />
+					vertical-align: bottom; /*行内对其方式*/<br />
+				}<br />
+				</code><br />
+			<li>text-decoretion 文本装饰</li>
+				<ul>
+					<li>overline  上划线</li>
+					<li>line-through 删除线</li>
+					<li>unline 下划线</li>
+				</ul>
+			<li> 关于超链接的状态设置</li>
+				<ul>
+					<li>a:link{} 为点击时</li>
+					<li>a:visited{} 点击之后</li>
+					<li>a:hover{} 鼠标滑过时</li>
+					<li>a:active{} 鼠标点击时</li>
+				</ul>
+		</ul>
+		关于margin-right无效的一些讨论：
+		<ul>
+			<li>浏览器默认从左往右渲染元素，在没有超出父容器的宽度的前提下  如果子容器的宽度能够被容纳  设置margin-right是没有用的 </li>
+			<li>#right{width: 400px;<br />height: 300px;<br />margin-right:100px;<br />float:right}
+				你再看有没有效, 使用向右浮动</li>
+			<li>span{<br />
+				position:absolute;<br/>
+				border:1px solid red;<br />
+				right:0;<br />
+				}
+			</li>
+		</ul>
+		关于table的border边框设置的一些经验：
+		<ul>
+			<li>直接在table标签里面直接写border设置的是边框的宽度</li>
+			<li>在style样式表中写border可以写三个值：线宽，线型，线色</li>
+			<li>一般的这样设置的表格每个单元格都有一个独立的边框，要想达到常用表格的效果<br/>
+				需要在table里面设置cellspacing="0"属性，使得单元格的间距为0即可达到效果
+			</li>
+			这里看图：<br />
+			<img src="../img/未设置单元格间距tab.PNG" alt="未设置单元格间距tab" />
+			未设置单元格间距<br />
+			<img src="../img/设置单元格间距为0.PNG" alt="设置单元格间距为0" />
+			设置单元格间距为0<br />
+		</ul>
+		一些单词：
+		<ul>
+			<li>inherit：继承</li>
+			<li>remote：远程</li>
+			<li>master： 主干</li>
+			<li>hover：悬停</li>
+			<li>vertical：垂直</li>
+		</ul>
+	</body>
+</html>
